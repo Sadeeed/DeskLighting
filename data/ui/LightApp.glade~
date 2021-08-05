@@ -71,7 +71,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
           <object class="GtkImage">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">../spectrum.jpg</property>
+            <property name="pixbuf">../../data/spectrum.jpg</property>
           </object>
           <packing>
             <property name="left-attach">1</property>

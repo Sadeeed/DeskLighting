@@ -27,6 +27,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
     <property name="step-increment">1</property>
     <property name="page-increment">10</property>
   </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+  </object>
   <object class="GtkAdjustment" id="saturationAdjustment">
     <property name="upper">255</property>
     <property name="step-increment">1</property>
@@ -182,7 +186,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem">
+                      <object class="GtkImageMenuItem" id="New">
                         <property name="label">gtk-new</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
@@ -191,21 +195,12 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem">
-                        <property name="label">gtk-open</property>
+                      <object class="GtkImageMenuItem" id="Presets">
+                        <property name="label">Presets</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkImageMenuItem">
-                        <property name="label">gtk-save</property>
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
+                        <property name="image">image1</property>
+                        <property name="use-stock">False</property>
                       </object>
                     </child>
                     <child>
@@ -288,7 +283,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem">
+                      <object class="GtkImageMenuItem" id="about">
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>

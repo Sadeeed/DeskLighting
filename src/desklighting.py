@@ -33,10 +33,10 @@ class Handler:
         print(write_read(value))
 
 
-mcuSerial = serial.Serial(port="/dev/ttyACM1", baudrate=9600, timeout=0.5)
+mcuSerial = serial.Serial(port="/dev/ttyACM0", baudrate=9600, timeout=0.5)
 # load glade UI xml
 builder = Gtk.Builder()
-uiFile = "src/ui/LightApp.glade"
+uiFile = "data/ui/LightApp.glade"
 builder.add_from_file(uiFile)
 builder.connect_signals(Handler())
 window = builder.get_object("MainWindow")
